@@ -54,6 +54,8 @@ h1, h2, h3, h4, h5, h6, p {
     border: 1px solid #000; /* Borde de 1px sólido negro */
     padding: 10px; /* Espaciado interno */
     margin: 10px 0; /* Margen superior e inferior */
+    display: inline-block; /* Ocupa solo la longitud del texto */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco opaco */
 }
 
 h2, h1 {
@@ -100,5 +102,3 @@ form button {
 form button:hover {
     background-color: #1558b3;
 }
-
-
