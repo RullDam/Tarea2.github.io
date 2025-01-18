@@ -5,14 +5,14 @@ body {
     padding: 0;
 }
 
-header {
+header, footer {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
     text-align: center;
 }
 
-header h1 {
+header h1, footer h2 {
     margin: 0;
     font-size: 2em;
 }
@@ -50,7 +50,7 @@ main {
     padding: 20px;
 }
 
-h2 {
+h2, h1 {
     color: #333;
 }
 
@@ -63,50 +63,41 @@ a:hover {
     text-decoration: underline;
 }
 
-#home-page {
-    background-image: url('https://imgs.search.brave.com/OcAdkmDGnzYPrr5yzxLqhs95OfXo6SZ-0c_0vt487g8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zMi5h/YmNzdGF0aWNzLmNv/bS9hYmMvd3d3L211/bHRpbWVkaWEvaGlz/dG9yaWEvMjAyNC8w/NC8wOS9yZXRyYXRv/LVJOZmw5eXVKbFJC/Z1lWR1N3ZVVFcGZJ/LTEyMDB4ODQwQGRp/YXJpb19hYmMuanBn');
-    background-size: cover;
-    background-position: center;
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form label {
+    margin: 10px 0 5px 0;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 400px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #1a73e8;
     color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-
-nav ul li {
-    margin: 0 15px;
+form button:hover {
+    background-color: #1558b3;
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 15px;
-    display: block;
-    transition: background-color 0.3s;
+footer p {
+    margin: 0;
+    font-size: 1em;
+    padding: 10px 0;
 }
 
-nav ul li a:hover {
-    background-color: #555;
-}
-
-main {
-    padding: 20px;
-}
-
-h2 {
-    color: #333;
-}
-
-a {
-    color: #1a73e8;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-#home-page {
-    background-image: url('https://imgs.search.brave.com/OcAdkmDGnzYPrr5yzxLqhs95OfXo6SZ-0c_0vt487g8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zMi5h/YmNzdGF0aWNzLmNv/bS9hYmMvd3d3L211/bHRpbWVkaWEvaGlz/dG9yaWEvMjAyNC8w/NC8wOS9yZXRyYXRv/LVJOZmw5eXVKbFJC/Z1lWR1N3ZVVFcGZJ/LTEyMDB4ODQwQGRp/YXJpb19hYmMuanBn');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-}
