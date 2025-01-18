@@ -50,6 +50,12 @@ main {
     padding: 20px;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    border: 1px solid #000; /* Borde de 1px sólido negro */
+    padding: 10px; /* Espaciado interno */
+    margin: 10px 0; /* Margen superior e inferior */
+}
+
 h2, h1 {
     color: #333;
 }
@@ -95,9 +101,4 @@ form button:hover {
     background-color: #1558b3;
 }
 
-footer p {
-    margin: 0;
-    font-size: 1em;
-    padding: 10px 0;
-}
 
