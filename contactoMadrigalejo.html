@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>Información de contacto</title>
-        <link rel="stylesheet" href="estilosCSSTarea2.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="estilosCSSTarea2.css">
+</head>
+<body style="background: url('https://imgs.search.brave.com/PE5myzkN9rjdZATb250vs-vGBIvl1uyJj0trGWFbENc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/aW5mb2JhZS5jb20v/cmVzaXplci92Mi9H/TEhPMktaM0JCR1dI/R1Q3MlpSVEhFQUhR/NC5qcGc_YXV0aD0x/YjE2MmE0ZjFjOWE5/NDQzZDhmODUyODIy/YzI1YWRjNjdhMjhm/Yzg5MzQyNmU2ZDJl/N2IzZDdlMGU3MzE5/Yjk4JnNtYXJ0PXRy/dWUmd2lkdGg9MzUw/JmhlaWdodD0yMzMm/cXVhbGl0eT04NQ') no-repeat center center; background-size: cover;">
     <header>
         <nav>
             <ul>
@@ -19,25 +20,28 @@
         </nav>
     </header>
     <main>
-        <body style="background-color: rgb(155, 155, 254);">
-           <h1>INFORMACIÓN DE CONTACTO</h1>
-           <ol>
-            <li> <a href="tel:+34 927354002">Teléfono del Ayto:</a></li>
-            <li> <a href="tel:+34 927111222">Teléfono de la Oficina de Turismo de Cáceres y Provincia:</a></li>
-            <ul>
-                <h1>Otros teléfonos de interés:</h1>
-                <ol>
-                    <li> <a href="tel: +34 9273645645">Pension Madrigalejo</a></li>
-                    <li> <a href="tel: +34 92738452414">Pension Maybe</a></li>
-                    <li> <a href="tel: +34 9273645645">Restaurante Pedro</a></l>
-                    <li> <a href="tel: +34 9273542414">Restaurante Guadalupe</a></li>
-                    <li> <a href="tel: +34 9273752415">Casa Sta. Maria</a></li>
-
-                </ol>
-            </ul>
-           </ol>
-            <img src="https://imgs.search.brave.com/-9Z5hc_lE9bHH0AabFhwIQ8htBsm-Sco_c_eaWkOVUE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8w/LzA0L0JhbmRlcmFf/ZGVfTWFkcmlnYWxl/am9fKEMlQzMlQTFj/ZXJlcykuc3Zn" width="500" length="250">
-            <img src="https://imgs.search.brave.com/t3RJbdhHd7yzQMFMGp4Ss-F1okCJAxbk0gggiaFh2pA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bWFkcmlnYWxlam8u/ZXMvby9hZGFwdGl2/ZS1tZWRpYS9pbWFn/ZS8xNDE4MzY3LzMv/YjFjYzkwMzItMDFi/YS0yNGJhLTk1NDct/Njc5NDYyYTU3Mzkz/P3Q9MTU5MjgzMzEw/OTA4OQ.jpeg" width="150" lenght="75">
-        </body>
+        <h2>Formulario de contacto</h2>
+        <form action="mailto:administrador@ejemplo.com" method="post" enctype="text/plain">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+            <label for="suscripcion">Desea recibir información:</label>
+            <input type="checkbox" id="suscripcion" name="suscripcion">
+            <label for="motivo">Motivo de contacto:</label>
+            <select id="motivo" name="motivo">
+                <option value="consulta">Consulta</option>
+                <option value="sugerencia">Sugerencia</option>
+                <option value="reclamo">Reclamo</option>
+            </select><br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Restablecer</button>
+        </form>
     </main>
+    <footer>
+        <p>Madrigalejo 2025 R.Villa</p>
+    </footer>
+</body>
 </html>
